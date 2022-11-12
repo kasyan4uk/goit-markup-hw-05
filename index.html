@@ -47,7 +47,7 @@
             <div class="container">
                 <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
                 <div class="button-hero">
-                    <button type="button" class="button">Замовити послугу</button>
+                    <button data-modal-open type="button" class="button">Замовити послугу</button>
                 </div>
             </div>
         </section>
@@ -98,9 +98,26 @@
             <div class="container">
                  <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="section-work">
-                    <li class="item"><img src="./images/work1.jpg" alt="робота1" width="370" height="294"></li>
-                    <li class="item"><img src="./images/work2.jpg" alt="робота2" width="370" height="294"></li>
-                    <li class="item"><img src="./images/work3.jpg" alt="робота3" width="370" height="294"></li>
+                    <li class="item">
+                         <img src="./images/work1.jpg" alt="робота1" width="370" height="294">
+                         <div class="work-text">
+                            <p>Десктопні додатки</p>
+                         </div>
+                    </li>
+
+                    <li class="item">
+                        <img src="./images/work2.jpg" alt="робота2" width="370" height="294">
+                        <div class="work-text">
+                            <p>Мобільні додатки</p>
+                        </div>
+                    </li>
+
+                    <li class="item">
+                        <img src="./images/work3.jpg" alt="робота3" width="370" height="294">
+                        <div class="work-text">
+                            <p>Дизайнерські рішення</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -331,7 +348,7 @@
                         </a>
                     </li>
                     <li class="footer-list">
-                        <a  clashref="https://twitter.com/">
+                        <a href="https://twitter.com/">
                             <svg class="footer-social" width="20" height="20">
                                 <use href="./images/icon.svg#twitter"></use>
                             </svg>
@@ -355,5 +372,15 @@
             </div>
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="modal-button">
+                <svg class="modal-close" width="11" height="11">
+                    <use href="./images/icon.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
